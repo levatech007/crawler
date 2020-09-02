@@ -1,0 +1,8 @@
+version: '2'
+services:
+  app:
+    build: .
+    command: rackup -p 3001
+    container_name: ariregister_script
+    volumes:
+      - .:/ariregister_rack_docker/
